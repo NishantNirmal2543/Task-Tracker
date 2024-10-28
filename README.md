@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here’s the README entirely in code format, with all points included in markdown syntax:
+
+markdown
+Copy code
+
+# Task Tracker
+
+Task Tracker is a task management application that allows users to track and manage their tasks effectively. This project is built with Next.js and includes user authentication, a dashboard for managing tasks, and a mobile-responsive layout.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Project Locally](#running-the-project-locally)
+- [Assumptions](#assumptions)
+- [Project Highlights](#project-highlights)
+- [Built With](#built-with)
+- [Deployment on Vercel](#deployment-on-vercel)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy of the project up and running, follow the steps below.
 
-```bash
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (version 14.0 or higher recommended)
+- [Git](https://git-scm.com/)
+- An active internet connection to install dependencies
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/NishantNirmal2543/Task-Tracker.git
+   Navigate to the project directory
+   bash
+   Copy code
+   cd Task-Tracker
+   Install dependencies
+   bash
+   Copy code
+   npm install
+   Running the Project Locally
+   After completing the installation, you can start the development server:
+   ```
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Once the server is running, open your browser and go to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000
+You should now see the Task Tracker application running locally.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Additional Notes
+If you encounter a dependency conflict, try running:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm install --legacy-peer-deps
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Assumptions
+The user credentials are stored locally for demo purposes (default credentials: username admin, password password).
+No back-end database is connected in the local setup, so data is not persistent between sessions.
+A login page serves as the home page for this project.
+Project Highlights
+User Authentication: Basic login functionality is implemented. Only authorized users can access the dashboard.
+Task Dashboard: A centralized dashboard allows users to create, manage, and track tasks.
+Responsive Design: The project is mobile-responsive, with a desktop-first layout and mobile adjustments.
+Chart Integration: Task trends are visualized with react-chartjs-2 (requires compatibility with React version 18 or lower).
+Custom Fonts: Custom fonts are loaded for enhanced aesthetics.
+Built With
+Next.js - The React framework for production
+React - JavaScript library for building user interfaces
+Chart.js - Data visualization library for charts
+CSS - For styling the components
