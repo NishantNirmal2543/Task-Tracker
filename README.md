@@ -1,8 +1,3 @@
-Here’s the README entirely in code format, with all points included in markdown syntax:
-
-markdown
-Copy code
-
 # Task Tracker
 
 Task Tracker is a task management application that allows users to track and manage their tasks effectively. This project is built with Next.js and includes user authentication, a dashboard for managing tasks, and a mobile-responsive layout.
