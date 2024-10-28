@@ -16,7 +16,7 @@ Task Tracker is a task management application that allows users to track and man
 - [Assumptions](#assumptions)
 - [Project Highlights](#project-highlights)
 - [Built With](#built-with)
-- [Deployment on Vercel](#deployment-on-vercel)
+
 
 ## Getting Started
 
